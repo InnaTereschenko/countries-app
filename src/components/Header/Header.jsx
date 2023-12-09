@@ -1,6 +1,6 @@
 import { HeaderStyle, WrapperHeader, Title, ThemeTogle } from "./Header.styled";
 import Container from "../Container/Container";
-import { IoMoon, IoMoonOutline } from 'react-icons/io5';
+import { IoMoon } from 'react-icons/io5';
 
 const Header = () => {
     return (
