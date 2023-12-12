@@ -1,21 +1,20 @@
 import { HeaderStyle, WrapperHeader, Title, ThemeTogle } from "./Header.styled";
 import Container from "../Container/Container";
-import { IoMoon } from 'react-icons/io5';
+import { IoMoon } from "react-icons/io5";
 
 const Header = () => {
-    return (
-        <HeaderStyle>
-            <Container>
-                <WrapperHeader>
-                    <Title>Where is the country?</Title>
-                    <ThemeTogle>
-<IoMoon/> Light Theme
-                    </ThemeTogle>
-</WrapperHeader>
-            </Container>
-
-        </HeaderStyle>
-    )
-}
+  return (
+    <HeaderStyle>
+      <Container>
+        <WrapperHeader>
+          <Title>Where is the country?</Title>
+          <ThemeTogle>
+            <IoMoon /> Light Theme
+          </ThemeTogle>
+        </WrapperHeader>
+      </Container>
+    </HeaderStyle>
+  );
+};
 
 export default Header;
