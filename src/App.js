@@ -1,6 +1,7 @@
 
 import Container from "./components/Container/Container";
 import Header from "./components/Header/Header";
+import Search from "./components/Search/Search";
 
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
     <>
     <Header />
     <main>
-        <Container></Container>
+        <Container>
+          <Search/>
+        </Container>
     </main>
     </>
   )

@@ -19,9 +19,7 @@ color: var(--color-text);
 font-size: var(--font-s-md);
 font-weight: var(--font-w-bold);
 `
-    // .attrs({ to: '/' })`
 
-// `
 export const ThemeTogle = styled.div`
 text-align: center;
 cursor: pointer;

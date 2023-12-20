@@ -16,7 +16,7 @@ const Header = () => {
     <HeaderStyle>
       <Container>
         <WrapperHeader>
-          <Title>Where is the country?</Title>
+          <Title to='/'>Where is the country?</Title>
           <ThemeTogle onClick={toggleTheme}>
                        {theme === 'light' ? (<IoMoonOutline size='14px'/>) : (<IoMoon size='14px'/>)}
                       <span style={{marginLeft:'0.75rem'}}>{theme} Theme</span>
