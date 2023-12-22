@@ -2,15 +2,29 @@ import Select from "react-select";
 import styled from "styled-components";
 
 const Filter = styled(Select).attrs({
-    styles:{
-        control: (baseStyles, state) => ({
+    styles: {
+        control: (baseStyles) => ({
             ...baseStyles,
-            borderColor: state.isFocused ? 'grey' : 'red',
+            border: 'none',
+            backgroundColor: ' var(--color- ui - base)',
+            color: 'var(--color-text)',
+            borderRadius: 'var(--border-r)',
+            padding: '0.25rem',
+            boxShadow: 'var(--shadow)',
+            height: '50px',
+
+            
         }),
-        option: () => ({})
+        option: (baseStyles, state) => ({
+            ...baseStyles,
+            cursor: 'pointer',
+            color: 'var(--color-text)',
+            backgroundColor: state.isSelected ? 'var(--color-bg)' : 'var(--color-ui-base)',
+        })
     }
-})``
- 
+})`
+width: 300px;
+`
   
 
 
