@@ -10,11 +10,14 @@ margin-bottom: 1.5rem;
 border-radius: var( --border-r);
 box-shadow: var(--shadow);
 width: 100%;
+box-sizing: content-box;
 cursor: pointer;
+transition: box-shadow 0.3s ease, transform 0.3s ease;
 
-&hover{
-    box-shadow: yellow;
-}
+&:hover {
+    box-shadow: 0 0 10px yellow;
+    transform: scale(1.05);
+  }
 
   @media (min-width: 767.99px) {
     margin-bottom: 0;
@@ -24,7 +27,10 @@ cursor: pointer;
   `;
 
 export const Input = styled.input`
-border-box: none;
-
+border: none;
+margin-right: 2rem;
+outline: none;
+background-color: var(--color-ui-base);
+color: var(--color-text);
 `;
 

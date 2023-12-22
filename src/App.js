@@ -1,18 +1,18 @@
 
-import Container from "./components/Container/Container";
 import Header from "./components/Header/Header";
-import Search from "./components/Search/Search";
+import Forms from "./components/Forms/Forms";
+import Main from "./components/Main/Main";
 
 
 function App() {
   return (
     <>
     <Header />
-    <main>
-        <Container>
-          <Search/>
-        </Container>
-    </main>
+    <Main>
+        
+          <Forms/>
+        
+    </Main>
     </>
   )
 }
