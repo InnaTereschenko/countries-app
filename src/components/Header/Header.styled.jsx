@@ -5,13 +5,14 @@ export const HeaderStyle = styled.header`
 box-shadow: var(--shadow);
 background-color: var(--color-ui-base);
 
+
 `
 
 export const WrapperHeader = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
 `
 
 export const Title = styled.a`

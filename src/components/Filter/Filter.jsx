@@ -24,6 +24,12 @@ const Filter = styled(Select).attrs({
     }
 })`
 width: 300px;
+transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+&:hover {
+    box-shadow: 0 0 10px yellow;
+    transform: scale(1.05);
+     }
 `
   
 

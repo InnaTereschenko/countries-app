@@ -5,12 +5,13 @@ background-color: var(--color-ui-base);
 padding: 1rem 2rem;
 display: flex;
 align-items: center;
+justify-content: center;
 margin-top: 1rem;
 margin-bottom: 1.5rem;
 border-radius: var( --border-r);
 box-shadow: var(--shadow);
-width: 100%;
-box-sizing: content-box;
+max-width: 100%;
+// box-sizing: content-box;
 cursor: pointer;
 transition: box-shadow 0.3s ease, transform 0.3s ease;
 
