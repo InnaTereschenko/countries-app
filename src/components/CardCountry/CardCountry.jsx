@@ -8,10 +8,10 @@ import {
   CardListItem,
 } from "./CardCountry.styled";
 
-const CardCountry = (img, name, info = [], onClick) => {
+const CardCountry = ({img, name, info = [], onClick}) => {
   return (
     <CardWrapper onClick={onClick}>
-      <CardImg src={img} />
+          <CardImg src={img} alt={name} />
       <Card>
         <CardTitle>{name}</CardTitle>
         <CardList>

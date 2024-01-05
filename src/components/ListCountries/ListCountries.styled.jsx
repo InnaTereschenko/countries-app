@@ -8,14 +8,14 @@ export const WrapperList = styled.section`
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 
-  @media (min-width: 766,99px) {
+  @media (min-width: 766.99px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 
     padding: 2.5rem 0;
   }
 
-  @media (min-width: 1023,99px) {
+  @media (min-width: 1023.99px) {
     grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
   }

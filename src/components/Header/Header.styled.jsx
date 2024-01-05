@@ -19,9 +19,10 @@ export const Title = styled.a`
 color: var(--color-text);
 font-size: var(--font-s-md);
 font-weight: var(--font-w-bold);
+transition: box-shadow 0.3s ease, transform 0.3s ease;
 
 &:hover {
-    box-shadow: 0 0 10px yellow;
+    text-shadow: 0 0 10px yellow;
     transform: scale(1.05);
   }
 `

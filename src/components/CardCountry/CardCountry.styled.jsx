@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.article`
 border-radius: var(--border-r);
+background-color: var(--color-ui-base);
+cursor: pointer;
+box-shadow: var(--shadow);
 `
 export const CardImg = styled.img`
 
@@ -10,7 +13,7 @@ export const Card = styled.div`
 
 
 `
-export const CardTitle = styled.h2`
+export const CardTitle = styled.h3`
 
 `
 
