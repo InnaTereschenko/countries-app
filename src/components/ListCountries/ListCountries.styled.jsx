@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const WrapperList = styled.section`
-      width: 100%;
-      padding: 2rem 0;
-      
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 2rem;
+  width: 100%;
+  padding: 2rem 0;
 
-        @media (min-width: 766,99px) {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+
+  @media (min-width: 766,99px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 
@@ -19,5 +19,4 @@ export const WrapperList = styled.section`
     grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
   }
-
-`
+`;
