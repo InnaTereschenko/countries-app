@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Search from "../Search/Search";
 import Filter from "../Filter/Filter";
 import { Wrapper } from "./Forms.styled";
@@ -11,9 +11,14 @@ const options = [
   { value: "Oceania", label: "Oceania" },
 ];
 
-const Forms = () => {
+const Forms = ({onSearch}) => {
   const [search, setSearch] = useState("");
   const [region, setRegion] = useState("");
+
+  useEffect(() => {
+    onSearch(search);
+  }, [search, region, onSearch]);
+
   return (
     <Wrapper>
       <Search search={search} setSearch={setSearch} />

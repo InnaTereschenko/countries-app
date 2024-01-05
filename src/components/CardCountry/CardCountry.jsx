@@ -1,7 +1,7 @@
 import React from "react";
 import {
   CardWrapper,
-  Card,
+  CardInfo,
   CardTitle,
   CardImg,
   CardList,
@@ -12,7 +12,7 @@ const CardCountry = ({img, name, info = [], onClick}) => {
   return (
     <CardWrapper onClick={onClick}>
           <CardImg src={img} alt={name} />
-      <Card>
+      <CardInfo>
         <CardTitle>{name}</CardTitle>
         <CardList>
           {info.map((el) => (
@@ -22,7 +22,7 @@ const CardCountry = ({img, name, info = [], onClick}) => {
             </CardListItem>
           ))}
         </CardList>
-      </Card>
+      </CardInfo>
     </CardWrapper>
   );
 };

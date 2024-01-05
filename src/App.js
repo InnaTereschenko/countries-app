@@ -1,60 +1,26 @@
-import { useState, useEffect } from "react";
-
+import { useState} from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Forms from "./components/Forms/Forms";
 import Main from "./components/Main/Main";
-import ListCountries from './components/ListCountries/ListCountries';
-import CardCountry from "./components/CardCountry/CardCountry";
-import axios from "axios";
-import { ALL_COUNTRIES } from './config';
-
+import HomePage from "./pages/HomePage";
+import DetailsPage from "./pages/DetailsPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   const [countries, setCountries] = useState([]);
 
-  console.log(countries);
-  useEffect(() => {
-    axios.get(ALL_COUNTRIES).then(
-      ({data})=>setCountries(data)
-    )
-  }, [])
-
   return (
     <>
-    <Header />
-    <Main>
-        
-        <Forms />
-        <ListCountries>
-          {countries.map((c) => {
-            const countryInfo = {
-              img: c.flags.png,
-              name: c.name,
-              info: [
-                {
-                  title: 'Population:',
-                  description: c.population.toLocaleString(),
-                },
-                {
-                  title: 'Rregion:',
-                  description: c.region,
-                },
-                {
-                  title: 'Capital:',
-                  description: c.capital,
-                }
-              ],
-            };
-
-            return (
-              <CardCountry key={c.name } {...countryInfo} />
-            )
-          })}
-        </ListCountries>
-        
-    </Main>
+      <Header />
+      <Main>
+        <Routes>
+          <Route path="/" element={<HomePage countries={countries} setCountries={setCountries}/>} />
+          <Route path="/country/:name" element={<DetailsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Main>
     </>
-  )
+  );
 }
 
 export default App;
