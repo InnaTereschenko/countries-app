@@ -62,7 +62,7 @@ body[data-theme="dark"] {
   --shadow: rgba(245, 245, 245, 0.5) 0 0 8px;
 }
 body[data-theme="light"] {
-  --color-text: hsl(200, 15%, 8%);
+  --color-text: hsl(197, 100%, 1%);
   /* --color-bg: hsl(0, 0%, 98%); */
   --color-bg: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
   /* --color-ui-base: hsl(0, 0%, 100%); */

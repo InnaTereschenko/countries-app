@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
-export CardWrapper = styled.article`
+export const CardWrapper = styled.article`
+border-radius: var(--border-r);
+`
+export const CardImg = styled.img`
 
 `
-export CardImg = styled.img`
-
-`
-export Card = styled.div`
+export const Card = styled.div`
 
 
 `
-export CardTitle = styled.h2`
-
-`
-
-export CardList = styled.ul`
+export const CardTitle = styled.h2`
 
 `
 
-export CardListItem = styled.li`
+export const CardList = styled.ul`
+
+`
+
+export const CardListItem = styled.li`
 
 `

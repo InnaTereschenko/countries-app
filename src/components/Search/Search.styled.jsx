@@ -11,7 +11,6 @@ margin-bottom: 1.5rem;
 border-radius: var( --border-r);
 box-shadow: var(--shadow);
 max-width: 100%;
-// box-sizing: content-box;
 cursor: pointer;
 transition: box-shadow 0.3s ease, transform 0.3s ease;
 

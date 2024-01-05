@@ -19,6 +19,11 @@ export const Title = styled.a`
 color: var(--color-text);
 font-size: var(--font-s-md);
 font-weight: var(--font-w-bold);
+
+&:hover {
+    box-shadow: 0 0 10px yellow;
+    transform: scale(1.05);
+  }
 `
 
 export const ThemeTogle = styled.div`
