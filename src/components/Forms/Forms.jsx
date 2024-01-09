@@ -16,8 +16,11 @@ const Forms = ({onSearch}) => {
   const [region, setRegion] = useState("");
 
   useEffect(() => {
-    onSearch(search);
-  }, [search, region, onSearch]);
+    const regionValue = region?.value || '';
+    onSearch(search, regionValue);
+
+    // eslint-disable-next-line
+  }, [search, region]);
 
   return (
     <Wrapper>

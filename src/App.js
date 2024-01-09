@@ -8,7 +8,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   const [countries, setCountries] = useState([]);
-
+  console.log((countries));
   return (
     <>
       <Header />

@@ -23,7 +23,7 @@ const HomePage = ({countries, setCountries}) => {
       data = data.filter((c) => c.name.toLowerCase().includes(search.toLowerCase()));
       }
       
-      setFiltetedCountries(data || [])
+      setFiltetedCountries(data);
   };
 
   useEffect(() => {
@@ -35,8 +35,10 @@ const HomePage = ({countries, setCountries}) => {
   }, [countries.length, setCountries]);
 
     useEffect(() => {
-        handleSearch('', '');
-    });
+        handleSearch();
+
+        // eslint-disable-next-line
+    }, [countries]);
     
   return (
     <>

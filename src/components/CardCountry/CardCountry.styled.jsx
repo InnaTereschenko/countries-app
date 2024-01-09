@@ -8,7 +8,7 @@ export const CardWrapper = styled.article`
   overflow: hidden;
 `;
 export const CardImg = styled.img`
-    width: 100%;
+  width: 100%;
   height: 150px;
   object-fit: cover;
   object-position: center;
@@ -18,20 +18,20 @@ export const CardInfo = styled.div`
   padding: 1rem 1.5rem 2rem;
 `;
 export const CardTitle = styled.h3`
-font-size: var(--font-s-md);
-font-weight: var(--font-w-bold);
+  font-size: var(--font-s-md);
+  font-weight: var(--font-w-bold);
 `;
 
 export const CardList = styled.ul`
-padding: 1rem 0 0;
+  padding: 1rem 0 0;
 `;
 
 export const CardListItem = styled.li`
-font-size: var(--font-s-sm);
-font-weight: var(--font-w-light);
-line-height: 1.5;
+  font-size: var(--font-s-sm);
+  font-weight: var(--font-w-light);
+  line-height: 1.5;
 
- & > b {
+  & > b {
     font-weight: var(--font-w-bold);
   }
 `;

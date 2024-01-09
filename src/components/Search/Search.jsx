@@ -2,6 +2,8 @@ import { IoSearch } from "react-icons/io5";
 import { InputContainer, Input } from "./Search.styled";
 
 const Search = ({ search, setSearch }) => {
+
+  
   return (
     <InputContainer>
       <IoSearch />
