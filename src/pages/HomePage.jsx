@@ -8,7 +8,9 @@ import axios from "axios";
 import { ALL_COUNTRIES } from "../config";
 
 const HomePage = ({countries, setCountries}) => {
-  const [filteredCountries, setFiltetedCountries] = useState(countries);
+    const [filteredCountries, setFiltetedCountries] = useState(countries);
+    
+    
 
   const navigate = useNavigate();
 

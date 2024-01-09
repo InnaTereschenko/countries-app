@@ -54,20 +54,19 @@ img {
 
 body[data-theme="dark"] {
   --color-text: hsl(0, 0%, 100%);
-  /* --color-bg: hsl(207, 26%, 17%); */
   --color-bg: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  /* --color-ui-base: hsl(209, 23%, 22%); */
   --color-ui-base: #302b63;
 
   --shadow: rgba(245, 245, 245, 0.5) 0 0 8px;
 }
 body[data-theme="light"] {
   --color-text: hsl(197, 100%, 1%);
-  /* --color-bg: hsl(0, 0%, 98%); */
-  --color-bg: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
-  /* --color-ui-base: hsl(0, 0%, 100%); */
-  --color-ui-base: rgba(173,252,234,1);
-
+  --color-bg: linear-gradient(
+    95.2deg,
+    rgba(173, 252, 234, 1) 26.8%,
+    rgba(192, 229, 246, 1) 64%
+  );
+  --color-ui-base: rgba(173, 252, 234, 1);
   --shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
 }
 
