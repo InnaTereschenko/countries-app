@@ -5,6 +5,7 @@ import { useCallback, useState, useEffect } from "react";
 import { IoArrowBack } from "react-icons/io5";
 import { searchByCountry } from "../config";
 import Button from "../components/Button/Button";
+import InfoCountry from "../components/InfoCountry/InfoCountry";
 
 const Details = () => {
   const [country, setCountry] = useState(null);
@@ -30,7 +31,8 @@ const Details = () => {
       <Button onClick={handleBtnBackClick}>
         <IoArrowBack /> Back
       </Button>
-      {name}
+      {country && <InfoCountry {...country} />}
+      
     </div>
   );
 };
